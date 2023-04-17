@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="index.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <title>Crear Personaje</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Marvel</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Crear Personaje</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../reparto/index.html">Reparto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h1>Crear personaje</h1>
+      <form class="form">
+
+        <fieldset>
+          <div>
+            <label for="name">Nombre del Personaje</label>
+            <div class="personal-information">
+              <input
+                type="text"
+                id="name"
+                tabindex="1"
+                name="name"
+                minlength="5"
+                required
+                oninvalid="setCustomValidity('El nombre del personaje no puede ser menor a 4 letras')"
+                placeholder="Juanito Perez"
+                />
+                <p class="check">&#x2713;</p>
+            </div>
+          </div>
+
+          <br>
+          <br>
+
+          <div>
+            <label for="age">Edad del Personaje</label>
+            <div class="personal-information">
+              <input
+                placeholder="> 16"
+                tabindex="3"
+                type="number"
+                id="age"
+                name="age"
+                min="16" 
+                max="50"
+                required
+              />  
+              <p class="check">&#x2713;</p>
+            </div>        
+          </div>
+          
+          <br>
+          <br>
+  
+          <div>
+            <label for="email">email del Personaje</label>
+            <div class="personal-information">
+              <input
+                tabindex="2"
+                type="email"
+                name="email"
+                id="email" 
+                required
+                placeholder="pedro@perez.com"
+                pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,}$"
+                oninvalid="setCustomValidity('el formato debe tener pedro@perez.com')"
+              />          
+              <p class="check">&#x2713;</p>
+            </div>
+          </div>
+
+          <br>
+          <br>
+
+          <div>
+            <label>Pais del Personaje</label>
+            <div>
+              <label for="1">Colombia</label>
+              <input type="radio" id="1" name="country" value="colombia" />
+  
+              <label for="2">Argentinia</label>
+              <input type="radio" id="2" name="country" value="argentinia" />
+  
+              <label for="3">Chile</label>
+              <input type="radio" id="3" name="country" value="chile" />
+            </div>          
+          </div>   
+        </fieldset>
+        
+        <fieldset>
+          <div>
+            <label form="poderes"> Poderes del Personaje</label>
+            <div>
+              <label for="1">Volar</label>
+              <input type="checkbox" id="1" value="volar" name="poderes" />
+  
+              <label for="2">Velocidad</label>
+              <input type="checkbox" id="2" value="velocidad" name="poderes" />
+  
+              <label for="3">Leer Mentes</label>
+              <input type="checkbox" id="3" value="leerMenter" name="poderes" />
+            </div>          
+          </div>  
+        </fieldset>
+
+        <fieldset>
+          <div>
+            <label>Comida favorita del Personaje</label>
+            <select>
+              <optgroup label="Comida Chatarra">
+                <option value="Pasta">Pasta</option>
+                <option value="Hamburguesa">Hamburguesa</option>
+                <option value="Chori">Chori</option>
+              </optgroup>
+              <optgroup label="Frutas">
+                <option value="Pasta">Manzana</option>
+                <option value="Hamburguesa">Pera</option>
+                <option value="Chori">Banana</option>
+              </optgroup>
+            </select>          
+          </div>
+        </fieldset>
+
+        <div class="form-btn">
+          <input type="reset">
+          <input type="submit" />
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer class="container-fluid text-center w-100">
+    <div class="row bg-dark text-light">
+      <div class="col-12 col-sm-6 col-xl-3">© Marvel Studios</div>
+      <div class="col-12 col-sm-6 col-xl-3">Sobre Nosotros</div>
+      <div class="col-12 col-sm-6 col-xl-3">Redes</div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+</body>
+
+</html>

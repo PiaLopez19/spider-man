@@ -1,0 +1,23 @@
+* {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+  background-color: rgb(255, 249, 239);
+  height: 100vh;
+}
+
+main,
+footer {
+  padding: 0 20px;
+}
+
+main {
+  min-height: 80%;
+}
+
+/* ----------------------------------------- Tabla ----------------------------------------- */
+.table {
+  box-shadow: 5px 5px 5px black;
+}
+/* ----------------------------------------- Tabla ----------------------------------------- */

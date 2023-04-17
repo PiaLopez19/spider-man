@@ -1,0 +1,97 @@
+
+* {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+  background-color: rgb(255, 249, 239);
+  height: 100vh;
+}
+
+main,
+footer {
+  padding: 0 20px;
+}
+
+main {
+  min-height: 80%;
+}
+
+/* ----------------------------------------- Formulario ----------------------------------------- */
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-name {
+  display: flex;
+}
+
+.form-btn {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: right;
+}
+
+
+/* ............................................ Inputs ............................................ */
+.personal-information {
+  display: flex;
+  align-items: center;
+}
+
+.personal-information input {
+  width: 45%;
+  height: 30px;
+  margin-right: 15px;
+}
+
+.personal-information input:focus {
+  background: rgb(246, 242, 250);
+  transition: all 0.5s;
+}
+
+.check {
+  display: none;
+}
+
+.personal-information input[name="name"]:valid ~ .check  {
+  display: inline-block;
+  color: rgb(205, 238, 155);
+}
+
+.personal-information input[name="email"]:valid ~ .check  {
+  display: inline-block;
+  color: rgb(205, 238, 155);
+}
+
+.personal-information input[name="age"]:valid ~ .check  {
+  display: inline-block;
+  color: rgb(205, 238, 155);
+}
+/* ............................................ Inputs ............................................ */
+
+
+/* ............................................ buttons ............................................ */
+
+.form-btn input {
+  border-radius: 5px;
+  margin-left: 15px;
+  padding: 5px;
+  border: 1px solid black;
+}
+
+.form-btn input:hover {
+  background: rgb(106, 184, 232) !important;
+  transition: all 300ms;
+}
+
+.form-btn input:active {
+  background: rgb(205, 233, 251) !important;
+  transition: all 300ms;
+}
+/* ............................................ buttons ............................................ */
+
+/* ----------------------------------------- Formulario ----------------------------------------- */

@@ -1,0 +1,28 @@
+* {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.carousel-item {
+  height: 30%;
+}
+
+.carousel-caption {
+  background-color: #3d3c3ca3;
+}
+
+.card img {
+  height: 350px;
+}
+
+.cards__item {
+  margin-bottom: 2rem;
+} 
+
+.badge {
+  font-size: 10px !important;
+}
+
+.tooltip-img {
+  right: 30%;
+}

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="index.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <title>Spidern-Man</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Marvel</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="./index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./form/index.html">Crear Personaje</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./reparto/index.html">Reparto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="main">
+    <section>
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="true"
+      >
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="d-flex justify-content-center bg-black h-100">
+              <img src="./assets/images/carousel/Spider-Man-1.jpeg" class="d-block h-100 object-fit-cover" alt="poster spiderman">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Spider Man 1</h5>
+                <p>Some representative placeholder content for the first slide.</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div  class="d-flex justify-content-center bg-black h-100">
+              <img src="./assets/images/carousel/Spider-Man-2.jpeg" class="d-block h-100 object-fit-cover" alt="poster spiderman">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Spider Man 2</h5>
+                <p>Some representative placeholder content for the first slide.</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div  class="d-flex justify-content-center bg-black h-100">
+              <img src="./assets/images/carousel/Spider-Man-3.jpeg" class="d-block h-100 object-fit-cover" alt="poster spiderman">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>spiderman 3</h5>
+                <p>Some representative placeholder content for the first slide.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <section class="container-fluid w-100 text-center">
+      <h2>Artivulos en venta</h2>
+      <div class="row row-cols-xxl-5">
+        <div class="cards__item col-12 col-sm-6 col-xl-3">
+          <div class="card">
+            <img src="./assets/images/articule/mascara.jpeg" class="card-img-top object-fit-cover" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Mascara <span class="badge text-bg-success">-25%</span></h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <button class="btn btn-primary" >Comprar</button>
+            </div>
+          </div>
+        </div>
+        <div class="cards__item col-12 col-sm-6 col-xl-3">
+          <div class="card">
+            <img src="./assets/images/articule/bolso.jpeg" class="card-img-top object-fit-cover" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Bolso</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <button class="btn btn-primary" >Comprar</button>
+            </div>
+          </div>
+        </div>
+        <div class="cards__item col-12 col-sm-6 col-xl-3">
+          <div class="card">
+            <img src="./assets/images/articule/peluche.jpeg" class="card-img-top object-fit-cover" alt="...">
+            <div class="card-body">
+              <h5 class="card-title position-relative">
+                Peluche
+                <span
+                  data-bs-html="true"
+                  class="position-absolute top-0 translate-middle badge rounded-pill bg-info tooltip-img"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="right"
+                  title="<div>
+                    <img src='./assets/images/articule/peluche2.jpeg' width='150px' height='150px' />
+                    <p>Segundo modelo disponible</p>
+                  </div>"
+                >
+                  +
+                </span>
+              </h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <button class="btn btn-primary" >Comprar</button>
+            </div>
+          </div>
+        </div>
+        <div class="cards__item col-12 col-sm-6 col-xl-3">
+          <div class="card">
+            <img src="./assets/images/articule/cartuchera.jpeg" class="card-img-top object-fit-cover" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Cartuchera</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <button class="btn btn-primary" >Comprar</button>
+            </div>
+          </div>
+        </div>
+        <div class="cards__item col-12 col-sm-6 col-xl-3">
+          <div class="card">
+            <img src="./assets/images/articule/pochoclera.jpeg" class="card-img-top object-fit-cover" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Pochoclera <span class="badge text-bg-danger" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ingresa la proxima semana">Sin Stock</span></h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <button class="btn btn-primary" >Comprar</button>
+            </div>
+          </div>
+        </div>
+        <div class="cards__item col-12 col-sm-6 col-xl-3">
+          <div class="card">
+            <img src="./assets/images/articule/taza.jpeg" class="card-img-top object-fit-cover" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Taza</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Comprar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="container-fluid text-center w-100">
+    <div class="row bg-dark text-light">
+      <div class="col-12 col-sm-6 col-xl-3">© Marvel Studios</div>
+      <div class="col-12 col-sm-6 col-xl-3">Sobre Nosotros</div>
+      <div class="col-12 col-sm-6 col-xl-3">Redes</div>
+    </div>
+  </footer>
+
+  <!-- Modal de Compra Tarjeta 6 -->
+  <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Datos de Pago</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Nombre del titular de la tarjeta</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Numero de tarjeta</label>
+              <input type="number" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Acepto terminos y condiciones</label>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Ejecutar Pago</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Compra Exitosa</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Recibiras un correo con la factura y la informacion de tu compra.
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Modal de Compra Tarjeta 6 -->
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+  <script>
+    {
+      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+      const myModal = document.getElementById('myModal')
+      const myInput = document.getElementById('myInput')
+
+      myModal.addEventListener('shown.bs.modal', () => {
+        myInput.focus()
+      })
+    }
+  </script>
+</body>
+
+</html>
